@@ -29,6 +29,15 @@ const projects = [
     ],
   },
   {
+    title: "CTFs",
+    description: "Overflow, format string and injection CTFs",
+    links: [
+      "https://github.com/HugoKovac/SnowCrash",
+      "https://github.com/HugoKovac/Rainfall",
+      "https://github.com/HugoKovac/override",
+    ],
+  },
+  {
     title: "Reimplementation of nmap",
     description: "Network scanning tool - C.",
     link: "https://github.com/HugoKovac/nmap",
@@ -95,19 +104,21 @@ const Portfolio = () => {
                 <span>View on GitHub</span>
               </a>
             )}
-            {project.links &&
-              project.links.map((link, i) => (
-                <a
-                  key={i}
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline mt-2 flex items-center space-x-2"
-                >
-                  <FaGithub className="text-xl" />
-                  <span>View on GitHub ({i + 1})</span>
-                </a>
-              ))}
+            <div className="flex flex-col md:flex-row">
+              {project.links &&
+                project.links.map((link, i) => (
+                  <a
+                    key={i}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline mt-2 flex items-center space-x-2 mr-6"
+                  >
+                    <FaGithub className="text-xl" />
+                    <span>View on GitHub ({i + 1})</span>
+                  </a>
+                ))}
+            </div>
           </li>
         ))}
       </ul>
