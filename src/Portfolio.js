@@ -47,7 +47,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="flex flex-col mx-auto w-5/6 md:w-3/4 p-6 bg-black min-h-screen text-white">
+    <div className="flex flex-col mx-auto w-xl md:w-3/4 p-6 bg-black min-h-screen text-white">
       <div className="text-center mb-8">
         <img
           src={pp}
