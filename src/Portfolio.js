@@ -34,7 +34,7 @@ const projects = [
     link: "https://github.com/HugoKovac/nmap",
   },
   {
-    title: "Nginx Link Reverse Proxy with PHP CGI",
+    title: "Nginx Like Reverse Proxy with PHP CGI",
     description: "Custom web server and reverse proxy - C++.",
     link: "https://github.com/HugoKovac/WebServer",
   },
